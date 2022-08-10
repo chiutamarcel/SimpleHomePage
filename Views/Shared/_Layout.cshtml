@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PlatformaTeme</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PlatformaTeme.styles.css" asp-append-version="true" />
+
+    <!-- @await RenderSectionAsync("css", required: false); -->
+</head>
+<body>
+
+    @*Top Bar*@
+    <div id="background-top">
+        
+
+    </div>
+
+    <div id="content">
+        <div id="menu">
+            <a href="/" id="home-button">Dasimie.ro</a>
+            <div id="search-bar">
+                <input type="text" placeholder="Cauta tema facuta de cineva" required/>
+                <input class="button" type="button" value="Cauta"/>
+            </div>
+        </div>
+        
+        <div class="container">
+            @*Side Bar*@
+            <div id="left-side">
+                <div class="window">
+                    <form class="login">
+                        <input type="text" value="Nume"/>
+                        <input type="text" value="Parola"/>
+                        <input class="button" type="button" value="Intra in cont"/>
+                        <a href="">Nu ai cont? Apasa aici!</a>
+                        <a href="">Am uitat parola.</a>
+                    </form>
+                
+                </div>
+
+                <form action="">
+                    <div class="window">
+                        <div class="toggle-title">
+                            <p>Nivel de invatamant:</p>
+                            <div class="arrow-down"></div>
+                        </div>
+                        
+                        <div class="option">Clasele 1-4</div>
+                        <div class="option">Clasele 5-8</div>
+                        <div class="option">Liceu</div>
+                        <div class="option">Facultate</div>
+                    </div>
+
+                    <div class="window">
+                        <p>Universitate:</p>
+                    </div>
+                        
+                    <div class="window">
+                        <p>Materie:</p>
+                    </div>
+
+                    <div class="window">
+                        <p>Ultimul pret:</p>
+                    </div>
+                        
+                    <div class="window">
+                        <p>Termen limita:</p>
+                    </div>
+                    
+
+                    <input class="button outside" type="button" value="Aplica">
+                    
+                    
+                </form>
+                    
+                
+            </div>
+            
+            <div id="right-side">
+                @RenderBody()
+            </div>
+        
+        </div>
+         
+    </div>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,23 @@
+.hw-menu{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.hw-menu div{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.announcement {
+    justify-content: center;
+    text-align:center;
+    background-color: var(--color-accents);
+    color:var(--text);
+    /* border: solid black 1px; */
+  }
+  
+  .announcement:hover {
+    opacity:0.8;
+  }
