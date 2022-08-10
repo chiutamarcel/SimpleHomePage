@@ -1,5 +1,4 @@
-# Heading level 1
-Simple HomePage project
+# Simple HomePage project
 
 This is a simple homepage I made.
 The homepage is not functional and not finished.
